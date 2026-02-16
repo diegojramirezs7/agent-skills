@@ -1,5 +1,5 @@
 ---
-name: project-init
+name: init-backend
 description: Initialize production-ready Django or FastAPI projects with Postgres, proper structure, and best practices. Use when users want to start a new web API project with opinionated defaults.
 ---
 
@@ -15,6 +15,7 @@ Initialize production-ready Python web API projects with opinionated best practi
 ## When to Use
 
 Trigger this skill when the user wants to:
+
 - "Initialize a new FastAPI project"
 - "Set up a Django API project"
 - "Create a new API project with Postgres"
@@ -57,6 +58,7 @@ Which stack would you like to use?
 ```
 
 Then collect:
+
 - **Project name** (used for directory and package names)
 - **For Django only**: App name (the main Django app within the project)
 - **Target directory** (default to current directory, but ask if unclear)
@@ -66,11 +68,13 @@ Then collect:
 Before creating anything, show the user:
 
 **What will be created:**
+
 - List of all files
 - Directory structure overview
 - Key configurations (CORS, rate limiting, DB setup, etc.)
 
 **Example output:**
+
 ```
 I'll create a FastAPI project with the following structure:
 
@@ -105,10 +109,12 @@ Proceed with creation? (yes/no)
 ### Step 3: Route to Reference and Execute
 
 Based on the chosen stack:
+
 - **FastAPI** → Read and follow `references/fastapi-init.md`
 - **Django** → Read and follow `references/django-init.md`
 
 The reference document contains:
+
 - Exact file contents/templates
 - Directory structure details
 - All necessary imports and configurations
@@ -136,27 +142,35 @@ Your project is ready! Check the README.md for more details.
 ## Important Notes
 
 ### Always Use References
+
 When creating files, always read the appropriate reference document first:
+
 - For FastAPI: `view references/fastapi-init.md`
 - For Django: `view references/django-init.md`
 
 The reference contains the complete, up-to-date templates and configurations.
 
 ### Confirmation Required
+
 Never create files without showing the plan and getting explicit user confirmation.
 
 ### Python Version
+
 Always pin to Python 3.13.1 in `.python-version` file.
 
 ### Database Setup
+
 Both stacks include:
+
 - docker-compose.yml with Postgres
 - Proper connection configuration
 - Connection pooling
 - Required psycopg/asyncpg dependencies
 
 ### Common Elements
+
 Both stacks get:
+
 - uv for dependency management
 - ruff for linting
 - .env.example with all required variables
@@ -170,11 +184,13 @@ Both stacks get:
 ## Error Handling
 
 If the target directory already contains a project:
+
 - Warn the user
 - Ask if they want to proceed anyway
 - Suggest initializing in a different directory
 
 If required tools are missing:
+
 - Check for `uv` availability
 - Provide installation instructions if needed
 
