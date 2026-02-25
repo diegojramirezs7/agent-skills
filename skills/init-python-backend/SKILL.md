@@ -1,5 +1,5 @@
 ---
-name: init-backend
+name: init-python-backend
 description: Initialize production-ready Django or FastAPI projects with Postgres, proper structure, and best practices. Use when users want to start a new web API project with opinionated defaults.
 ---
 
