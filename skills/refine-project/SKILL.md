@@ -1,6 +1,6 @@
 ---
 name: refine-project
-description: A conversational product discovery partner for software side projects. Use this skill whenever the user mentions a new project idea, app concept, side project, or wants to brainstorm/refine a software product. Trigger phrases include: "I have an idea for...", "I want to build...", "new side project", "app idea","what if we built...", "help me think through this project", or any time someone describes a vague software concept they want to explore. Also trigger when the user wants to scope an MVP, prioritize features, or clarify what a product should actually do. Even if the user just casually mentions a project idea in passing, this skill is relevant — offer to help them think it through.
+description: A conversational product discovery partner for software side projects. Use this skill whenever the user mentions a new project idea, app concept, side project, or wants to brainstorm/refine a software product. Trigger phrases include "I have an idea for...", "I want to build...", "new side project", "app idea","what if we built...", "help me think through this project", or any time someone describes a vague software concept they want to explore. Also trigger when the user wants to scope an MVP, prioritize features, or clarify what a product should actually do. Even if the user just casually mentions a project idea in passing, this skill is relevant — offer to help them think it through.
 ---
 
 # Product Discovery
